@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,15 +7,93 @@
     <meta name="author" content="FireFish42">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/favicon/favicon-16x16.png">
+    <link rel="manifest" href="resources/favicon/site.webmanifest">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="resources/css/reset.css">
     <link rel="stylesheet" href="resources/css/styles.css">
 
+    <script src="https://kit.fontawesome.com/927d156370.js" crossorigin="anonymous"></script>
+
     <title>Greenon Web Development</title>
 </head>
 <body>
-    
+    <header>
+        <nav class="desktop">
+            <a href="#overview">About</a>
+            <a href="#work">Student Works</a>
+            <a href="#members">Students</a>
+            <a href="#instructors">Instructor</a>
+        </nav>
+
+        <div class="mobile menu-bars"><i class="fas fa-ellipsis-h"></i></div>
+        <nav class="mobile">
+            <a href="#overview">About</a>
+            <a href="#work">Student Works</a>
+            <a href="#members">Students</a>
+            <a href="#instructors">Instructor</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>We are <span>Web Developers</span></h1>
+            <p>Welcome to the Greenon Web Design Course of 2021.<br><span>Learn</span> about our instructor, students, and student works.<br><span>Experience</span> the next generation of web developers</p>
+        </div>
+    </section>
+    <section class="overview" id="overview">
+        <div class="container">
+            <div class="text" id="members-text"><a href="#members">Learn about the Students <i class="fas fa-chevron-right"></i></a></div>
+            <div class="icon" id="members-icon"><i class="fas fa-users"></i></div>
+
+            <div class="text" id="works-text"><a href="#work"><i class="fas fa-chevron-left"></i> Explore the Projects</a></div>
+            <div class="icon" id="works-icon"><i class="far fa-file-code"></i></div>
+
+            <div class="text" id="instructors-text"><a href="#instructors">Get to know the Instructor <i class="fas fa-chevron-right"></i></a></div>
+            <div class="icon" id="instructors-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+        </div>
+    </section>
+    <section class="work" id="work">
+        <div class="container">
+            <div class="carousel">
+                <div class="mySlides fade">
+                    <img src="https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Website One">
+                    <p class="caption"><span>Website One</span> is all about ....</p>
+                </div>
+                <div class="mySlides fade">
+                    <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Website Two">
+                    <p class="caption">Caption Two</p>
+                </div>
+                <div class="mySlides fade">
+                    <img src="https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Website Three">
+                    <p class="caption">Caption Three</p>
+                </div>
+
+                <a onclick="plusSlides(-1)" class="prev"><i class="fas fa-chevron-left"></i></a>
+                <a onclick="plusSlides(1)" class="next"><i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="dots" style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <div class="container">
+            <hr>
+            <blockquote style="text-align: center"><i class="fas fa-quote-left"></i>This is a testimonial"</blockquote>
+            <p>~ FireFish42</p>
+            <hr>
+        </div>
+    </section>
+    <section class="member" id="members">
+        
+    </section>
+    <script src="resources/scripts/script.js"></script>
 </body>
 </html>
