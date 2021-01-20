@@ -162,7 +162,41 @@ nav {
     to {opacity: 1}
 }
 
-/* 6. Page Styles ========*/
-section {
-    margin-bottom: 2rem;
+/* User Cards */
+#members-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
+.card {
+    width: 15rem;
+    box-shadow: 4px 4px 7px grey;
+    padding: 1rem;
+    line-height: 0.2;
+    margin: 2rem 0;
+}
+
+.card h5#name {
+    font-family: "Asap", sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+p.year {
+    color: grey;
+    font-size: 0.85rem;
+}
+
+.card a.view {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.card hr {
+    border: 0.5px solid black;
+}
+
+.card a.view:hover { text-decoration: none; }
+/* 6. Page Styles ========*/
