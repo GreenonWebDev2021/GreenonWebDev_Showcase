@@ -96,6 +96,14 @@ nav {
 
 #instructors-icon { grid-area: 3 / 3 / span 1 / span 1 }
 
+section.instructors div.teacher { margin-bottom: 2rem;}
+section.instructors div.skills {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
 
 /* 5. Component Styles ===*/
 
