@@ -8,9 +8,11 @@
 ==========================*/
 
 /* 1. Global Styles ======*/
-.mobile {
-    display: none;
+@media only screen and (max-width: 960px) {
+    .desktop { display: none }
 }
+
+body, html { background-color: #fafafa; }
 
 /* 2. Typography Styles ==*/
 * { font-family: "Nunito", sans-serif; font-weight: 400; }
@@ -21,13 +23,28 @@ a {
     margin-right: 3rem;
 }
 
+a:hover { text-decoration: underline; }
+
+header a {color: hsl(136, 67%, 22%);}
+header a:hover { text-decoration: underline; }
+
 .hero {
-    line-height: 1.65;
+    font-size: 3rem;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 1390px) {
+    .hero { font-size: 2rem }
+}
+
+.hero p {
+    font-size: 1.6rem;
 }
 
 .hero span {
     font-family: "Asap", sans-serif;
     font-weight: 600;
+    color: hsl(267, 43%, 50%);
 }
 
 .hero p span { font-style: italic }
@@ -35,27 +52,38 @@ a {
 .overview .icon {
     font-size: 4.5rem;
     text-align: center;
+    color: #5C3F17;
 }
 
 .overview .text {
-    font-size: 1.392rem;
+    font-size: 2.9rem;
     margin: auto;
+    color: #5C3F17;
+}
+
+@media only screen and (max-width: 1680px) {
+    .overview .text { font-size: 2rem }
+}
+
+@media only scren and (max-wdith: 1365px) {
+    .overview .text { font-size: 3rem }
 }
 
 .work span {
     font-family: "Asap", sans-serif;
     font-weight: 500;
+    color: #125C26;
 }
 
 /* 3. Structure Styles ===*/
 .hero {
-    margin-top: 4rem;
-    margin-bottom: 2rem;
+    margin-top: 10rem;
 }
 
 .container {
     width: 70%;
-    margin: 0 auto;
+    margin: 0 auto 8rem auto;
+    padding-top: 4rem;
 }
 
 /* 4. Module Styles ======*/
@@ -65,7 +93,7 @@ header {
     right: 0;
     left: 0;
     height: 4rem;
-    background-color: white;
+    background-color: #fafafa;
     z-index: 5;
 }
 
@@ -81,7 +109,7 @@ nav {
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 1.5rem 1rem;
+    grid-gap: 1.5rem 0rem;
 }
 
 #members-text { grid-area: 1 / 1 / span 1 / span 2 }
@@ -207,4 +235,10 @@ p.year {
 }
 
 .card a.view:hover { text-decoration: none; }
+
+@media only screen and (max-width: 1220px) {
+    .instructors img {
+        width: 300px;
+    }
+}
 /* 6. Page Styles ========*/
