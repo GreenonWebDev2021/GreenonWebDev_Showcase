@@ -65,8 +65,12 @@ header a:hover { text-decoration: underline; }
     .overview .text { font-size: 2rem }
 }
 
-@media only scren and (max-wdith: 1365px) {
+@media only scren and (max-width: 1365px) {
     .overview .text { font-size: 3rem }
+}
+
+@media only screen and (max-width: 930px) {
+    .hero { text-align: left }
 }
 
 .work span {
@@ -242,3 +246,7 @@ p.year {
     }
 }
 /* 6. Page Styles ========*/
+@media only screen and (max-width: 500px) {
+    .container { width: 100% }
+    * { padding: 0 auto }
+}
