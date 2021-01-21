@@ -81,15 +81,9 @@ header a:hover { text-decoration: underline; }
 }
 
 .container {
-<<<<<<< Updated upstream
     width: 70%;
     margin: 0 auto 8rem auto;
     padding-top: 4rem;
-=======
-    max-width: 70%;
-    min-width: 50%;
-    margin: 0 auto;
->>>>>>> Stashed changes
 }
 
 /* 4. Module Styles ======*/
